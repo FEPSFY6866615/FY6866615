@@ -236,7 +236,7 @@
     window.onload = getLastUpdatedTime;
 </script>
 
-     <!-- Placeholder for total word count -->
+    <!-- Placeholder for total word count -->
 <p id="totalWordCount"></p>
 <hr>
 <script>
@@ -256,14 +256,17 @@
     // Calculate word count for each section and accumulate the total
     const IntroductionCount = displayWordCount("Introduction_InText");
     const HistoryCount = displayWordCount("History_InText");
-    const SoftBodiedDevelopmentCount = displayWordCount("Soft Bodied Development_InText");
+    const DevelopmentCount = displayWordCount("Development_InText");
     const ConclusionCount = displayWordCount("Conclusion_InText");
+   
+
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + HistoryCount + SoftBodiedDevelopmentCount + ConclusionCount;
+    const totalWordCount = IntroductionCount + HistoryCount + DevelopmentCount + ConclusionCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
   // Run the function for specific sections and display total count when the page loads
   window.onload = displayTotalWordCount;
-</html>
+</script>
 
+</html>
