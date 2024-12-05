@@ -301,11 +301,12 @@ Mechanism and machine theory, 191, Available at: https://www.sciencedirect.com/s
     const IntroductionCount = displayWordCount("Introduction_InText");
     const HistoryCount = displayWordCount("History_InText");
     const SoftBodiedDevelopmentCount = displayWordCount("SoftBodiedDevelopment_InText");
+    const FigureCount = displayWordCount("Figure_InText);
     const ConclusionCount = displayWordCount("Conclusion_InText");
    
 
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + HistoryCount + SoftBodiedDevelopmentCount + ConclusionCount;
+    const totalWordCount = IntroductionCount + HistoryCount + SoftBodiedDevelopmentCount + FigureCount + ConclusionCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
