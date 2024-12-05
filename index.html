@@ -128,7 +128,7 @@
 
     <h3 id="Soft Bodied Development">Soft Bodied Development</h3> 
     <p class="ex1">
-      <pre id="SoftBodiedDevelopment1_InText">
+      <pre id="SoftBodiedDevelopment_InText">
     Consequently, scientists adopted the research of deep-sea organisms for inspiration. The deep-sea environment provides a range of abilities and survival characteristics, such as pressure resilience and mobility 
     <a href="#(Guorui, L. Et al. (2023))"><I>(Guorui, L. Et al. (2023)).</I></a>, that scientists could study and experiment with, exploring the extreme mechanical adaptations that these organisms provided. <a href="#(Feng, J-C. et al, (2022))"><I>(Feng, J-C. et al, (2022))</I></a>. Primarily the collection of deep-sea
     samples to study was extremely challenging. Most deep-sea organisms consisted of a gelatinous type of structure with tissue of extremely low stiffness. This created a challenge as previous methods of obtaining these
@@ -143,13 +143,13 @@
    </figure>
 
      <p style="font-size: 2px">
-       <pre id="Figure1_InText">
+       <pre id="Figure_InText">
     Figure 1 -<a href="#(Fin ray effect gripper designs (2024))"><I>Fin ray effect gripper designs (2024)</I></a>
        </pre>
    </p>
 
     <p class="ex1">
-      <pre id="SoftBodiedDevelopment2_InText">
+      <pre id="SoftBodiedDevelopment_InText">
 With these soft grippers researchers now had access to a wider range of organisms such as deep sea invertebrates. These invertebrates utilize hydrostatic skeletons, which consists of a fluid filled cavity surrounded by 
 muscle. These muscles act against the pressure of the fluid to generate movement, or muscular hydrostats which consists of a structure of highly dense muscles which provide skeletal support to the organism. Examples of 
 these organisms are snailfish or octopuses, these provided the inspiration for the development of mechanics such as muscle like actuators, these created a soft mechanism with movement that could withstand high pressures,
@@ -163,7 +163,7 @@ or hydraulic jamming grippers which provide a greater force allowing these mecha
     </figure>
       
     <p style="font-size: 2px">
-      <pre id="Figure2_InText">
+      <pre id="Figure_InText">
 Figure 2 –<a href="#(Bioinspired soft robots for deep-sea exploration, 2023)"><I>Bioinspired soft robots for deep-sea exploration (2023)</I></a>      Figure 3 - <a href="#Bioinspired deep-sea soft actuation (2023)"><I>Bioinspired deep-sea soft actuation (2023)</I></a>                       
       </pre>
     </p>
@@ -300,15 +300,13 @@ Mechanism and machine theory, 191, Available at: https://www.sciencedirect.com/s
     // Calculate word count for each section and accumulate the total
     const IntroductionCount = displayWordCount("Introduction_InText");
     const HistoryCount = displayWordCount("History_InText");
-    const SoftBodiedDevelopmentCount1 = displayWordCount("SoftBodiedDevelopment1_InText");
-    const SoftBodiedDevelopmentCount2 = displayWordCount("SoftBodiedDevelopment2_InText");
-    const FigureCount1 = displayWordCount("Figure1_InText);
-    const FigureCount2 = displayWordCount("Figure2_InText);
+    const SoftBodiedDevelopmentCount = displayWordCount("SoftBodiedDevelopment_InText");
+    const FigureCount = displayWordCount("Figure_InText);
     const ConclusionCount = displayWordCount("Conclusion_InText");
    
 
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + HistoryCount + SoftBodiedDevelopmentCount1 + SoftBodiedDevelopmentCount2 + FigureCount1 + FigureCount2 + ConclusionCount;
+    const totalWordCount = IntroductionCount + HistoryCount + SoftBodiedDevelopmentCount + FigureCount + ConclusionCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
